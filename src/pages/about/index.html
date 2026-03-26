@@ -1,0 +1,331 @@
+<!doctype html>
+<html lang="en" dir="ltr" data-theme="light" data-page="about">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="" data-i18n-attr="content:meta.description" />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self'; img-src 'self' data:; font-src 'self'; style-src 'self'; script-src 'self'"
+    />
+
+    <link
+      rel="preload"
+      href="/assets/fonts/playfair-display-v30-latin-700.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="/assets/fonts/inter-v13-latin-regular.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+
+    <link rel="stylesheet" href="/css/tokens.css" />
+    <link rel="stylesheet" href="/css/reset.css" />
+    <link rel="stylesheet" href="/css/base.css" />
+    <link rel="stylesheet" href="/css/utilities.css" />
+    <link rel="stylesheet" href="/components/header/header.css" />
+    <link rel="stylesheet" href="/components/footer/footer.css" />
+    <link rel="stylesheet" href="/pages/about/about.css" />
+
+    <link rel="alternate" hreflang="en" href="/pages/about/" />
+    <link rel="alternate" hreflang="es" href="/pages/about/?lang=es" />
+    <link rel="alternate" hreflang="x-default" href="/pages/about/" />
+
+    <link rel="manifest" href="/manifest.json" />
+    <link rel="icon" href="/favicon.ico" sizes="any" />
+
+    <title data-i18n="meta.title">About — Mario Acosta Tile &amp; Stone</title>
+  </head>
+  <body>
+    <a href="#main-content" class="skip-link" data-i18n="a11y.skipLink">Skip to main content</a>
+    <div id="a11y-announcer" aria-live="polite" aria-atomic="true" class="visually-hidden"></div>
+    <div class="nav-backdrop" aria-hidden="true"></div>
+
+    <!-- Site Header -->
+    <header class="site-header" role="banner">
+      <div class="container site-header__inner">
+        <a class="site-header__logo" href="/pages/home/" aria-label="Mario Acosta — Home">
+          <span class="site-header__wordmark">Mario Acosta</span>
+          <span class="site-header__tagline" data-i18n="nav.tagline">Tile &amp; Stone</span>
+        </a>
+
+        <nav class="site-nav" aria-label="Main navigation">
+          <ul class="site-nav__list" role="list">
+            <li><a href="/pages/home/" data-i18n="nav.home">Home</a></li>
+            <li><a href="/pages/gallery/" data-i18n="nav.gallery">Gallery</a></li>
+            <li><a href="/pages/about/" aria-current="page" data-i18n="nav.about">About</a></li>
+          </ul>
+        </nav>
+
+        <div class="site-header__controls">
+          <div class="lang-switch" role="group" aria-label="Language">
+            <button class="lang-switch__btn" data-lang-switch="en" aria-pressed="true" lang="en">EN</button>
+            <button class="lang-switch__btn" data-lang-switch="es" aria-pressed="false" lang="es">ES</button>
+          </div>
+
+          <button class="theme-toggle" data-theme-toggle aria-label="Switch to dark mode" aria-pressed="false">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <circle cx="12" cy="12" r="5"></circle>
+              <line x1="12" y1="1" x2="12" y2="3"></line>
+              <line x1="12" y1="21" x2="12" y2="23"></line>
+              <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+              <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+              <line x1="1" y1="12" x2="3" y2="12"></line>
+              <line x1="21" y1="12" x2="23" y2="12"></line>
+              <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+              <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+            </svg>
+          </button>
+
+          <button class="nav-toggle" aria-expanded="false" aria-controls="mobile-nav"
+            data-i18n-attr="aria-label:nav.toggleOpen" aria-label="Open navigation menu">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true" width="24" height="24">
+              <line x1="3" y1="6" x2="21" y2="6"></line>
+              <line x1="3" y1="12" x2="21" y2="12"></line>
+              <line x1="3" y1="18" x2="21" y2="18"></line>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <nav id="mobile-nav" class="mobile-nav" aria-label="Mobile navigation">
+      <button class="mobile-nav__close" data-i18n-attr="aria-label:nav.toggleClose" aria-label="Close navigation menu">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true" width="24" height="24">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
+      <ul class="mobile-nav__list" role="list">
+        <li><a href="/pages/home/" data-i18n="nav.home">Home</a></li>
+        <li><a href="/pages/gallery/" data-i18n="nav.gallery">Gallery</a></li>
+        <li><a href="/pages/about/" data-i18n="nav.about">About</a></li>
+      </ul>
+      <div class="lang-switch" role="group" aria-label="Language">
+        <button class="lang-switch__btn" data-lang-switch="en" aria-pressed="true" lang="en">EN</button>
+        <button class="lang-switch__btn" data-lang-switch="es" aria-pressed="false" lang="es">ES</button>
+      </div>
+    </nav>
+
+    <main id="main-content">
+
+      <!-- Bio Section -->
+      <section
+        class="about-bio section--angled-bottom"
+        aria-labelledby="bio-heading"
+        data-reveal
+      >
+        <div class="container about-bio__grid">
+          <div class="about-bio__photo">
+            <img
+              src="/assets/images/mario.webp"
+              srcset="/assets/images/mario.webp 400w, /assets/images/mario@2x.webp 800w"
+              width="400"
+              height="500"
+              loading="eager"
+              alt=""
+              data-i18n-attr="alt:about.bio.photo.alt"
+            />
+          </div>
+
+          <div class="about-bio__text">
+            <p class="about-bio__eyebrow" data-i18n="about.bio.eyebrow">Master Tile &amp; Stone Artisan</p>
+            <h1 id="bio-heading" data-i18n="about.bio.heading">About Mario Acosta</h1>
+            <p data-i18n="about.bio.body">
+              With over 20 years of experience in the tile and stone trade, Mario Acosta brings
+              the precision of a craftsman and the eye of an artist to every project.
+            </p>
+            <p data-i18n="about.bio.body2">
+              Family-owned and locally operated, we take pride in delivering work that lasts.
+            </p>
+            <a class="btn btn--primary" href="#contact" data-i18n="about.contact.heading">
+              Get in Touch
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Values Section -->
+      <section
+        class="values"
+        aria-labelledby="values-heading"
+      >
+        <div class="container">
+          <div class="values__header" data-reveal>
+            <h2 id="values-heading" data-i18n="about.values.heading">What We Stand For</h2>
+          </div>
+
+          <ul class="values__grid" role="list" data-reveal="stagger">
+            <li class="value-card">
+              <h3 data-i18n="about.values.quality.title">Quality Materials</h3>
+              <p data-i18n="about.values.quality.desc">
+                We source only premium tiles and stones, and never cut corners on substrate preparation.
+              </p>
+            </li>
+            <li class="value-card">
+              <h3 data-i18n="about.values.craftsmanship.title">True Craftsmanship</h3>
+              <p data-i18n="about.values.craftsmanship.desc">
+                Every cut, every grout line, every transition piece is done with intention.
+              </p>
+            </li>
+            <li class="value-card">
+              <h3 data-i18n="about.values.reliability.title">Reliability</h3>
+              <p data-i18n="about.values.reliability.desc">
+                We show up on time, communicate clearly, and finish what we start.
+              </p>
+            </li>
+            <li class="value-card">
+              <h3 data-i18n="about.values.local.title">Local &amp; Committed</h3>
+              <p data-i18n="about.values.local.desc">
+                We live and work in this community. Building lasting relationships matters as much as lasting floors.
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Contact Section -->
+      <section
+        class="contact"
+        id="contact"
+        aria-labelledby="contact-heading"
+        data-reveal
+      >
+        <div class="container contact__inner">
+          <div class="contact__info">
+            <h2 id="contact-heading" data-i18n="about.contact.heading">Get in Touch</h2>
+            <p data-i18n="about.contact.subtext">
+              Ready to start your project? We offer free, no-obligation estimates.
+            </p>
+            <address class="contact__details">
+              <a href="tel:+15550000000" rel="noopener noreferrer">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="20" height="20" aria-hidden="true">
+                  <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.4 2 2 0 0 1 3.6 1.22h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L7.91 8.82a16 16 0 0 0 6.27 6.27l1.18-1.18a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                </svg>
+                <span data-i18n="about.contact.phoneDisplay">(555) 000-0000</span>
+              </a>
+              <a href="mailto:mario@example.com" rel="noopener noreferrer">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="20" height="20" aria-hidden="true">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                  <polyline points="22,6 12,13 2,6"></polyline>
+                </svg>
+                <span data-i18n="about.contact.email">mario@example.com</span>
+              </a>
+            </address>
+          </div>
+
+          <form class="contact__form" novalidate aria-label="Contact form">
+            <div class="field">
+              <label for="contact-name" data-i18n="about.form.name.label">Your Name</label>
+              <input
+                id="contact-name"
+                name="name"
+                type="text"
+                required
+                autocomplete="name"
+                data-i18n-attr="placeholder:about.form.name.placeholder"
+                placeholder="Jane Smith"
+              />
+            </div>
+
+            <div class="field">
+              <label for="contact-email" data-i18n="about.form.email.label">Email Address</label>
+              <input
+                id="contact-email"
+                name="email"
+                type="email"
+                required
+                autocomplete="email"
+                data-i18n-attr="placeholder:about.form.email.placeholder"
+                placeholder="jane@example.com"
+              />
+            </div>
+
+            <div class="field">
+              <label for="contact-phone" data-i18n="about.form.phone.label">Phone (optional)</label>
+              <input
+                id="contact-phone"
+                name="phone"
+                type="tel"
+                autocomplete="tel"
+                data-i18n-attr="placeholder:about.form.phone.placeholder"
+                placeholder="(555) 000-0000"
+              />
+            </div>
+
+            <div class="field">
+              <label for="contact-message" data-i18n="about.form.message.label">Tell us about your project</label>
+              <textarea
+                id="contact-message"
+                name="message"
+                rows="5"
+                required
+                data-i18n-attr="placeholder:about.form.message.placeholder"
+                placeholder="Describe the space..."
+              ></textarea>
+            </div>
+
+            <div class="form-status" role="status" aria-live="polite"></div>
+
+            <button type="submit" class="btn btn--primary" data-i18n="about.form.submit">
+              Send Message
+            </button>
+          </form>
+        </div>
+      </section>
+
+    </main>
+
+    <!-- Site Footer -->
+    <footer class="site-footer" role="contentinfo">
+      <div class="container">
+        <div class="site-footer__inner">
+          <div class="site-footer__brand">
+            <span class="site-footer__wordmark">Mario Acosta</span>
+            <p class="site-footer__tagline" data-i18n="footer.tagline">Craftsmanship you can stand on.</p>
+          </div>
+          <nav aria-label="Footer navigation">
+            <p class="site-footer__nav-heading" data-i18n="nav.tagline">Navigation</p>
+            <ul class="site-footer__nav-list" role="list">
+              <li><a href="/pages/home/" data-i18n="nav.home">Home</a></li>
+              <li><a href="/pages/gallery/" data-i18n="nav.gallery">Gallery</a></li>
+              <li><a href="/pages/about/" data-i18n="nav.about">About</a></li>
+              <li><a href="#contact" data-i18n="footer.contact">Contact</a></li>
+            </ul>
+          </nav>
+          <div class="site-footer__contact">
+            <p class="site-footer__nav-heading" data-i18n="footer.contact">Contact</p>
+            <address>
+              <a href="tel:+15550000000" rel="noopener noreferrer">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="16" height="16" aria-hidden="true">
+                  <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.4 2 2 0 0 1 3.6 1.22h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L7.91 8.82a16 16 0 0 0 6.27 6.27l1.18-1.18a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                </svg>
+                <span data-i18n="about.contact.phoneDisplay">(555) 000-0000</span>
+              </a>
+              <a href="mailto:mario@example.com" rel="noopener noreferrer">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="16" height="16" aria-hidden="true">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                  <polyline points="22,6 12,13 2,6"></polyline>
+                </svg>
+                <span data-i18n="about.contact.email">mario@example.com</span>
+              </a>
+            </address>
+          </div>
+        </div>
+        <div class="site-footer__bottom">
+          <p>
+            &copy; <span id="footer-year"></span> Mario Acosta.
+            <span data-i18n="footer.rights">All rights reserved.</span>
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script type="module" src="/pages/about/about.js"></script>
+  </body>
+</html>

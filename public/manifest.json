@@ -1,0 +1,16 @@
+{
+  "name": "Mario Acosta — Tile & Stone",
+  "short_name": "Mario Acosta",
+  "description": "Expert tile installation and stone work for residential and commercial projects.",
+  "start_url": "/pages/home/",
+  "display": "browser",
+  "background_color": "#faf8f5",
+  "theme_color": "#bf7f47",
+  "icons": [
+    {
+      "src": "/favicon.ico",
+      "sizes": "any",
+      "type": "image/x-icon"
+    }
+  ]
+}

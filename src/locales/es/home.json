@@ -1,0 +1,47 @@
+{
+  "hero": {
+    "eyebrow": "Licenciado y Asegurado",
+    "title": "Piedra con Arte. Hecha para Durar.",
+    "subtitle": "Instalación premium de azulejos y piedra para proyectos residenciales y comerciales. Más de 20 años de artesanía a la mano.",
+    "cta": "Ver Nuestro Trabajo"
+  },
+  "services": {
+    "heading": "Nuestros Servicios",
+    "subheading": "Desde el concepto hasta la terminación, manejamos cada detalle.",
+    "floor": {
+      "title": "Pisos de Azulejo",
+      "desc": "Porcelana, cerámica, travertino y piedra natural para cocinas, baños, entradas y espacios exteriores."
+    },
+    "wall": {
+      "title": "Azulejos de Pared y Duchas",
+      "desc": "Duchas personalizadas, elegantes salpicaderos y paredes de impacto — colocados con precisión e impermeabilizados."
+    },
+    "stone": {
+      "title": "Elementos de Piedra",
+      "desc": "Encimeras, chimeneas, patios exteriores y trabajos de piedra personalizados que agregan valor duradero a cualquier espacio."
+    }
+  },
+  "cta": {
+    "heading": "¿Listo para transformar tu espacio?",
+    "subtext": "Obtén un presupuesto sin compromiso. Servimos al área metropolitana.",
+    "btn": "Obtener Presupuesto Gratis"
+  },
+  "testimonial": {
+    "heading": "Lo que dicen nuestros clientes",
+    "1": {
+      "quote": "El trabajo de Mario en nuestro baño principal es absolutamente impecable. Los patrones de azulejo son perfectos y todo el proceso fue perfecto.",
+      "author": "Jane D.",
+      "project": "Remodelación de Baño Principal"
+    },
+    "2": {
+      "quote": "A tiempo, dentro del presupuesto y bellamente ejecutado. El nuevo piso de nuestra cocina cambió completamente la sensación del hogar.",
+      "author": "Roberto M.",
+      "project": "Instalación de Piso de Cocina"
+    },
+    "3": {
+      "quote": "Profesional, meticuloso y verdaderamente apasionado por su oficio. No podríamos estar más contentos con nuestro patio exterior.",
+      "author": "Sarah K.",
+      "project": "Patio de Piedra Exterior"
+    }
+  }
+}

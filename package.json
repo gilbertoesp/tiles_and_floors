@@ -1,0 +1,29 @@
+{
+  "name": "mario-acosta-portfolio",
+  "version": "1.0.0",
+  "description": "Portfolio website for Mario Acosta — Tile & Stone Contractor",
+  "private": true,
+  "scripts": {
+    "dev": "browser-sync start --server src --files 'src/**/*' --no-notify --port 3000",
+    "build": "npm run typecheck && npm run build:ts && npm run build:css && npm run copy:assets",
+    "build:ts": "esbuild src/pages/home/home.ts src/pages/gallery/gallery.ts src/pages/about/about.ts --bundle --outdir=dist --format=esm --target=es2020 --minify --sourcemap",
+    "build:css": "node scripts/build-css.js",
+    "copy:assets": "node scripts/copy-assets.js",
+    "lint": "htmlhint 'src/**/*.html' && stylelint 'src/**/*.css' && eslint 'src/**/*.ts'",
+    "format": "prettier --write 'src/**/*.{html,css,ts,json}' 'scripts/**/*.js'",
+    "typecheck": "tsc --noEmit",
+    "i18n:check": "node scripts/i18n-check.js"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^8.0.0",
+    "@typescript-eslint/parser": "^8.0.0",
+    "browser-sync": "^3.0.3",
+    "esbuild": "^0.24.0",
+    "eslint": "^9.0.0",
+    "htmlhint": "^1.1.4",
+    "prettier": "^3.3.0",
+    "stylelint": "^16.0.0",
+    "stylelint-config-standard": "^36.0.0",
+    "typescript": "^5.5.0"
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "nav": {
+    "home": "Inicio",
+    "gallery": "Galería",
+    "about": "Nosotros",
+    "tagline": "Azulejo y Piedra",
+    "toggleOpen": "Abrir menú de navegación",
+    "toggleClose": "Cerrar menú de navegación"
+  },
+  "a11y": {
+    "skipLink": "Saltar al contenido principal",
+    "langChanged": "Idioma cambiado a español"
+  },
+  "meta": {
+    "title": "Mario Acosta — Contratista de Azulejo y Piedra",
+    "description": "Instalación experta de azulejos y piedra. Pisos, paredes, duchas y elementos de piedra personalizados para proyectos residenciales y comerciales."
+  },
+  "footer": {
+    "rights": "Todos los derechos reservados.",
+    "contact": "Contacto",
+    "tagline": "Artesanía en la que puedes pararte.",
+    "phone": "Llámanos",
+    "email": "Escríbenos"
+  }
+}

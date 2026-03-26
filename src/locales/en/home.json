@@ -1,0 +1,47 @@
+{
+  "hero": {
+    "eyebrow": "Licensed & Insured",
+    "title": "Crafted Stone. Built to Last.",
+    "subtitle": "Premium tile and stone installation for residential and commercial projects. Over 20 years of hands-on craftsmanship.",
+    "cta": "View Our Work"
+  },
+  "services": {
+    "heading": "Our Services",
+    "subheading": "From concept to completion, we handle every detail.",
+    "floor": {
+      "title": "Floor Tile",
+      "desc": "Porcelain, ceramic, travertine, and natural stone for kitchens, bathrooms, entryways, and outdoor spaces."
+    },
+    "wall": {
+      "title": "Wall Tile & Showers",
+      "desc": "Custom shower surrounds, elegant backsplashes, and statement feature walls — precision-set and waterproofed."
+    },
+    "stone": {
+      "title": "Stone Features",
+      "desc": "Countertops, fireplace surrounds, outdoor patios, and custom stonework that adds lasting value to any space."
+    }
+  },
+  "cta": {
+    "heading": "Ready to transform your space?",
+    "subtext": "Get a no-obligation estimate. We serve the greater metro area.",
+    "btn": "Get a Free Estimate"
+  },
+  "testimonial": {
+    "heading": "What our clients say",
+    "1": {
+      "quote": "Mario's work on our master bath is absolutely flawless. The tile patterns are perfect and the whole process was seamless.",
+      "author": "Jane D.",
+      "project": "Master Bath Remodel"
+    },
+    "2": {
+      "quote": "On time, on budget, and beautifully done. Our new kitchen floor completely changed the feel of the home.",
+      "author": "Roberto M.",
+      "project": "Kitchen Floor Installation"
+    },
+    "3": {
+      "quote": "Professional, meticulous, and truly passionate about his craft. We couldn't be happier with our outdoor patio.",
+      "author": "Sarah K.",
+      "project": "Outdoor Stone Patio"
+    }
+  }
+}

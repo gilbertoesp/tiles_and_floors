@@ -1,0 +1,13 @@
+/* ============================================================
+   Breakpoints — Reference only (mobile-first min-width only)
+   ============================================================
+
+   xs:  implied baseline  (≤ 479px)
+   sm:  @media (min-width: 480px)
+   md:  @media (min-width: 640px)
+   lg:  @media (min-width: 768px)
+   xl:  @media (min-width: 1024px)
+   2xl: @media (min-width: 1280px)
+
+   NEVER use max-width queries. Always write mobile styles first.
+*/

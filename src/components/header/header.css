@@ -1,0 +1,295 @@
+/* ============================================================
+   Header & Navigation
+   ============================================================ */
+
+.site-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: var(--z-nav);
+  padding-block: var(--space-3);
+  background-color: transparent;
+  transition:
+    background-color var(--transition-base),
+    box-shadow var(--transition-base),
+    padding var(--transition-base);
+}
+
+/* Solid background once user scrolls */
+.site-header.is-scrolled {
+  background-color: var(--color-bg);
+  box-shadow: var(--shadow-sm);
+  padding-block: var(--space-2);
+}
+
+.site-header__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-4);
+}
+
+/* --- Logo / Wordmark --- */
+.site-header__logo {
+  display: flex;
+  flex-direction: column;
+  line-height: 1;
+  text-decoration: none;
+}
+
+.site-header__wordmark {
+  font-family: var(--font-serif);
+  font-size: var(--text-xl);
+  font-weight: var(--weight-bold);
+  color: var(--color-text-on-dark);
+  transition: color var(--transition-base);
+}
+
+.site-header.is-scrolled .site-header__wordmark {
+  color: var(--color-text-primary);
+}
+
+.site-header__tagline {
+  font-family: var(--font-sans);
+  font-size: var(--text-xs);
+  font-weight: var(--weight-medium);
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--color-clay-200);
+  transition: color var(--transition-base);
+}
+
+.site-header.is-scrolled .site-header__tagline {
+  color: var(--color-accent);
+}
+
+/* --- Nav links --- */
+.site-nav {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .site-nav {
+    display: block;
+  }
+}
+
+.site-nav__list {
+  display: flex;
+  align-items: center;
+  gap: var(--space-8);
+  list-style: none;
+}
+
+.site-nav__list a {
+  font-size: var(--text-sm);
+  font-weight: var(--weight-semibold);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--color-text-on-dark);
+  text-decoration: none;
+  padding-block: var(--space-1);
+  border-bottom: 2px solid transparent;
+  transition:
+    color var(--transition-fast),
+    border-color var(--transition-fast);
+}
+
+.site-header.is-scrolled .site-nav__list a {
+  color: var(--color-text-primary);
+}
+
+.site-nav__list a:hover,
+.site-nav__list a[aria-current='page'] {
+  color: var(--color-accent);
+  border-bottom-color: var(--color-accent);
+}
+
+/* --- Controls (lang + theme + hamburger) --- */
+.site-header__controls {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+}
+
+/* --- Language switcher --- */
+.lang-switch {
+  display: flex;
+  align-items: center;
+  gap: var(--space-1);
+}
+
+.lang-switch__btn {
+  padding: var(--space-1) var(--space-2);
+  font-size: var(--text-xs);
+  font-weight: var(--weight-semibold);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--color-text-on-dark);
+  border-radius: var(--radius-sm);
+  transition:
+    color var(--transition-fast),
+    background-color var(--transition-fast);
+  cursor: pointer;
+  background: none;
+  border: none;
+}
+
+.site-header.is-scrolled .lang-switch__btn {
+  color: var(--color-text-secondary);
+}
+
+.lang-switch__btn[aria-pressed='true'],
+.lang-switch__btn:hover {
+  color: var(--color-accent);
+  background-color: var(--color-accent-subtle);
+}
+
+/* --- Theme toggle --- */
+.theme-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2rem;
+  height: 2rem;
+  color: var(--color-text-on-dark);
+  border-radius: var(--radius-full);
+  transition:
+    color var(--transition-fast),
+    background-color var(--transition-fast);
+  cursor: pointer;
+  background: none;
+  border: none;
+}
+
+.site-header.is-scrolled .theme-toggle {
+  color: var(--color-text-secondary);
+}
+
+.theme-toggle:hover {
+  background-color: var(--color-accent-subtle);
+  color: var(--color-accent);
+}
+
+.theme-toggle svg {
+  width: 1.125rem;
+  height: 1.125rem;
+  pointer-events: none;
+}
+
+/* --- Mobile hamburger --- */
+.nav-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  color: var(--color-text-on-dark);
+  border-radius: var(--radius-sm);
+  transition:
+    color var(--transition-fast),
+    background-color var(--transition-fast);
+  cursor: pointer;
+  background: none;
+  border: none;
+}
+
+.site-header.is-scrolled .nav-toggle {
+  color: var(--color-text-primary);
+}
+
+.nav-toggle:hover {
+  background-color: var(--color-accent-subtle);
+}
+
+@media (min-width: 768px) {
+  .nav-toggle {
+    display: none;
+  }
+}
+
+/* --- Mobile nav drawer --- */
+.mobile-nav {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: min(80vw, 320px);
+  z-index: calc(var(--z-nav) + 1);
+  background-color: var(--color-bg);
+  box-shadow: var(--shadow-xl);
+  padding: var(--space-16) var(--space-6) var(--space-6);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-6);
+  transform: translateX(100%);
+  transition: transform var(--transition-slow);
+}
+
+.mobile-nav.is-open {
+  transform: translateX(0);
+}
+
+.mobile-nav__list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+  list-style: none;
+}
+
+.mobile-nav__list a {
+  display: block;
+  padding: var(--space-3) var(--space-4);
+  font-size: var(--text-lg);
+  font-weight: var(--weight-semibold);
+  color: var(--color-text-primary);
+  border-radius: var(--radius-md);
+  text-decoration: none;
+  transition: background-color var(--transition-fast);
+}
+
+.mobile-nav__list a:hover {
+  background-color: var(--color-accent-subtle);
+  color: var(--color-accent);
+}
+
+.mobile-nav__close {
+  position: absolute;
+  top: var(--space-4);
+  right: var(--space-4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  color: var(--color-text-secondary);
+  border-radius: var(--radius-full);
+  background: none;
+  border: none;
+  cursor: pointer;
+  transition:
+    color var(--transition-fast),
+    background-color var(--transition-fast);
+}
+
+.mobile-nav__close:hover {
+  background-color: var(--color-accent-subtle);
+  color: var(--color-accent);
+}
+
+/* Overlay backdrop */
+.nav-backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: var(--z-nav);
+  background-color: rgb(0 0 0 / 0.5);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity var(--transition-base);
+}
+
+.nav-backdrop.is-visible {
+  opacity: 1;
+  pointer-events: all;
+}

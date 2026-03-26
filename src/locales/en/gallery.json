@@ -1,0 +1,64 @@
+{
+  "gallery": {
+    "heading": "Project Gallery",
+    "subheading": "A selection of our completed work.",
+    "filterLabel": "Filter by category",
+    "filter": {
+      "all": "All Projects",
+      "floors": "Floors",
+      "walls": "Walls & Showers",
+      "outdoor": "Outdoor",
+      "stone": "Stone Features"
+    },
+    "item": {
+      "floors01": {
+        "alt": "Herringbone marble floor in a residential kitchen",
+        "caption": "Herringbone marble floor — residential kitchen"
+      },
+      "floors02": {
+        "alt": "Large-format porcelain tiles in an open-plan living room",
+        "caption": "Large-format porcelain — open-plan living room"
+      },
+      "floors03": {
+        "alt": "Travertine tile entryway with decorative border",
+        "caption": "Travertine entryway with decorative border"
+      },
+      "floors04": {
+        "alt": "Outdoor terracotta tile patio with natural stone trim",
+        "caption": "Outdoor terracotta patio"
+      },
+      "walls01": {
+        "alt": "Subway tile shower with hexagonal floor mosaic",
+        "caption": "Subway tile shower with hex mosaic floor"
+      },
+      "walls02": {
+        "alt": "Marble slab shower surround with linear drain",
+        "caption": "Marble slab shower surround"
+      },
+      "walls03": {
+        "alt": "Glass mosaic kitchen backsplash behind a gas range",
+        "caption": "Glass mosaic kitchen backsplash"
+      },
+      "walls04": {
+        "alt": "Handmade zellige tile feature wall in a dining room",
+        "caption": "Zellige tile feature wall"
+      },
+      "outdoor01": {
+        "alt": "Irregular bluestone patio with dry-stack stone border",
+        "caption": "Bluestone patio with dry-stack border"
+      },
+      "outdoor02": {
+        "alt": "Pool deck with large travertine pavers",
+        "caption": "Travertine pool deck"
+      },
+      "stone01": {
+        "alt": "Quartzite waterfall kitchen island countertop",
+        "caption": "Quartzite waterfall island countertop"
+      },
+      "stone02": {
+        "alt": "Stacked ledgestone fireplace surround in a living room",
+        "caption": "Ledgestone fireplace surround"
+      }
+    }
+  }
+}

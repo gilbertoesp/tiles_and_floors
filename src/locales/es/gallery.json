@@ -1,0 +1,64 @@
+{
+  "gallery": {
+    "heading": "Galería de Proyectos",
+    "subheading": "Una selección de nuestros trabajos terminados.",
+    "filterLabel": "Filtrar por categoría",
+    "filter": {
+      "all": "Todos los Proyectos",
+      "floors": "Pisos",
+      "walls": "Paredes y Duchas",
+      "outdoor": "Exterior",
+      "stone": "Elementos de Piedra"
+    },
+    "item": {
+      "floors01": {
+        "alt": "Piso de mármol en espiga en una cocina residencial",
+        "caption": "Piso de mármol en espiga — cocina residencial"
+      },
+      "floors02": {
+        "alt": "Porcelana de gran formato en sala de estar de planta abierta",
+        "caption": "Porcelana de gran formato — sala de estar"
+      },
+      "floors03": {
+        "alt": "Entrada de azulejo de travertino con borde decorativo",
+        "caption": "Entrada de travertino con borde decorativo"
+      },
+      "floors04": {
+        "alt": "Patio exterior de terracota con acabado de piedra natural",
+        "caption": "Patio exterior de terracota"
+      },
+      "walls01": {
+        "alt": "Ducha de azulejo tipo metro con mosaico hexagonal en el piso",
+        "caption": "Ducha metro con piso mosaico hexagonal"
+      },
+      "walls02": {
+        "alt": "Revestimiento de ducha de mármol con desagüe lineal",
+        "caption": "Revestimiento de ducha de mármol"
+      },
+      "walls03": {
+        "alt": "Salpicadero de mosaico de vidrio detrás de una cocina de gas",
+        "caption": "Salpicadero de mosaico de vidrio"
+      },
+      "walls04": {
+        "alt": "Pared de acento de azulejo zellige hecho a mano en comedor",
+        "caption": "Pared de acento zellige"
+      },
+      "outdoor01": {
+        "alt": "Patio de piedra azul irregular con borde de piedra seca",
+        "caption": "Patio de piedra azul con borde seco"
+      },
+      "outdoor02": {
+        "alt": "Cubierta de piscina con grandes losas de travertino",
+        "caption": "Cubierta de piscina de travertino"
+      },
+      "stone01": {
+        "alt": "Encimera de isla de cocina en cascada de cuarcita",
+        "caption": "Encimera de isla en cascada de cuarcita"
+      },
+      "stone02": {
+        "alt": "Marco de chimenea de piedra apilada en sala de estar",
+        "caption": "Marco de chimenea de piedra apilada"
+      }
+    }
+  }
+}

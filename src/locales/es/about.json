@@ -1,0 +1,61 @@
+{
+  "about": {
+    "bio": {
+      "heading": "Sobre Mario Acosta",
+      "eyebrow": "Maestro Artesano en Azulejo y Piedra",
+      "body": "Con más de 20 años de experiencia en el oficio del azulejo y la piedra, Mario Acosta aporta la precisión de un artesano y el ojo de un artista a cada proyecto. Comenzando como aprendiz a los 17 años, Mario ha perfeccionado sus habilidades en cientos de instalaciones residenciales y comerciales, desde intrincados baños de mosaico hasta amplios patios de piedra natural.",
+      "body2": "Empresa familiar de operación local, nos enorgullecemos de entregar trabajos que duran — trabajos que puedes sentir bajo tus pies, ver en tus paredes y mostrar orgulloso a tus visitas.",
+      "photo": {
+        "alt": "Mario Acosta, contratista de azulejo y piedra, parado en un proyecto terminado"
+      }
+    },
+    "values": {
+      "heading": "En Lo Que Creemos",
+      "quality": {
+        "title": "Materiales de Calidad",
+        "desc": "Solo usamos azulejos y piedras premium, y nunca escatimamos en la preparación del sustrato — la base de cualquier instalación duradera."
+      },
+      "craftsmanship": {
+        "title": "Verdadera Artesanía",
+        "desc": "Cada corte, cada línea de lechada, cada pieza de transición se hace con intención. Creemos que los detalles son lo que separa el buen trabajo del gran trabajo."
+      },
+      "reliability": {
+        "title": "Confiabilidad",
+        "desc": "Llegamos a tiempo, nos comunicamos claramente y terminamos lo que empezamos. Nuestros clientes confían en nosotros en sus hogares — nos tomamos eso en serio."
+      },
+      "local": {
+        "title": "Local y Comprometido",
+        "desc": "Vivimos y trabajamos en esta comunidad. Construir relaciones duraderas con nuestros vecinos es tan importante como construir pisos duraderos."
+      }
+    },
+    "contact": {
+      "heading": "Contáctanos",
+      "subtext": "¿Listo para comenzar tu proyecto? Ofrecemos presupuestos gratuitos y sin compromiso.",
+      "phone": "+1 (555) 000-0000",
+      "phoneDisplay": "(555) 000-0000",
+      "email": "mario@example.com"
+    },
+    "form": {
+      "name": {
+        "label": "Tu Nombre",
+        "placeholder": "Juan García"
+      },
+      "email": {
+        "label": "Correo Electrónico",
+        "placeholder": "juan@ejemplo.com"
+      },
+      "phone": {
+        "label": "Teléfono (opcional)",
+        "placeholder": "(555) 000-0000"
+      },
+      "message": {
+        "label": "Cuéntanos sobre tu proyecto",
+        "placeholder": "Describe el espacio, el tipo de azulejo o piedra que tienes en mente y tu cronograma..."
+      },
+      "submit": "Enviar Mensaje",
+      "sending": "Enviando...",
+      "success": "¡Gracias! Nos pondremos en contacto en un día hábil.",
+      "error": "Algo salió mal. Por favor intenta de nuevo o llámanos directamente."
+    }
+  }
+}

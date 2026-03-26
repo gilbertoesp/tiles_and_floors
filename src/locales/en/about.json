@@ -1,0 +1,61 @@
+{
+  "about": {
+    "bio": {
+      "heading": "About Mario Acosta",
+      "eyebrow": "Master Tile & Stone Artisan",
+      "body": "With over 20 years of experience in the tile and stone trade, Mario Acosta brings the precision of a craftsman and the eye of an artist to every project. Starting as an apprentice at 17, Mario has honed his skills across hundreds of residential and commercial installations — from intricate mosaic bathrooms to expansive natural stone patios.",
+      "body2": "Family-owned and locally operated, we take pride in delivering work that lasts — work you can feel underfoot, see on your walls, and be proud to show your guests.",
+      "photo": {
+        "alt": "Mario Acosta, tile and stone contractor, standing in a completed project"
+      }
+    },
+    "values": {
+      "heading": "What We Stand For",
+      "quality": {
+        "title": "Quality Materials",
+        "desc": "We source only premium tiles and stones, and we never cut corners on substrate preparation — the foundation of any lasting installation."
+      },
+      "craftsmanship": {
+        "title": "True Craftsmanship",
+        "desc": "Every cut, every grout line, every transition piece is done with intention. We believe the details are what separate good work from great work."
+      },
+      "reliability": {
+        "title": "Reliability",
+        "desc": "We show up on time, communicate clearly, and finish what we start. Our clients trust us in their homes — we take that seriously."
+      },
+      "local": {
+        "title": "Local & Committed",
+        "desc": "We live and work in this community. Building lasting relationships with our neighbors is just as important as building lasting floors."
+      }
+    },
+    "contact": {
+      "heading": "Get in Touch",
+      "subtext": "Ready to start your project? We offer free, no-obligation estimates.",
+      "phone": "+1 (555) 000-0000",
+      "phoneDisplay": "(555) 000-0000",
+      "email": "mario@example.com"
+    },
+    "form": {
+      "name": {
+        "label": "Your Name",
+        "placeholder": "Jane Smith"
+      },
+      "email": {
+        "label": "Email Address",
+        "placeholder": "jane@example.com"
+      },
+      "phone": {
+        "label": "Phone (optional)",
+        "placeholder": "(555) 000-0000"
+      },
+      "message": {
+        "label": "Tell us about your project",
+        "placeholder": "Describe the space, the type of tile or stone you have in mind, and your timeline..."
+      },
+      "submit": "Send Message",
+      "sending": "Sending...",
+      "success": "Thank you! We'll be in touch within one business day.",
+      "error": "Something went wrong. Please try again or call us directly."
+    }
+  }
+}

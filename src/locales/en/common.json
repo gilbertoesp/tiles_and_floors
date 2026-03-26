@@ -1,0 +1,25 @@
+{
+  "nav": {
+    "home": "Home",
+    "gallery": "Gallery",
+    "about": "About",
+    "tagline": "Tile & Stone",
+    "toggleOpen": "Open navigation menu",
+    "toggleClose": "Close navigation menu"
+  },
+  "a11y": {
+    "skipLink": "Skip to main content",
+    "langChanged": "Language changed to English"
+  },
+  "meta": {
+    "title": "Mario Acosta — Tile & Stone Contractor",
+    "description": "Expert tile installation and stone work. Floors, walls, showers, and custom stone features for residential and commercial projects."
+  },
+  "footer": {
+    "rights": "All rights reserved.",
+    "contact": "Contact",
+    "tagline": "Craftsmanship you can stand on.",
+    "phone": "Call us",
+    "email": "Email us"
+  }
+}

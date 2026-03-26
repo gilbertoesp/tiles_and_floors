@@ -1,0 +1,220 @@
+/* ============================================================
+   Utilities — Layout helpers, scroll-reveal, dividers, buttons
+   ============================================================ */
+
+/* --- Layout --- */
+.container {
+  width: 100%;
+  max-width: var(--container-max);
+  margin-inline: auto;
+  padding-inline: var(--container-padding);
+}
+
+@media (min-width: 640px) {
+  .container {
+    padding-inline: var(--space-6);
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    padding-inline: var(--space-8);
+  }
+}
+
+/* --- Accessibility --- */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+.skip-link {
+  position: absolute;
+  top: var(--space-2);
+  left: var(--space-2);
+  z-index: var(--z-modal);
+  padding: var(--space-2) var(--space-4);
+  background: var(--color-accent);
+  color: #fff;
+  font-weight: var(--weight-semibold);
+  border-radius: var(--radius-md);
+  transform: translateY(-120%);
+  transition: transform var(--transition-fast);
+}
+
+.skip-link:focus {
+  transform: translateY(0);
+}
+
+/* --- Buttons --- */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  padding: var(--space-3) var(--space-6);
+  font-family: var(--font-sans);
+  font-size: var(--text-base);
+  font-weight: var(--weight-semibold);
+  line-height: 1;
+  border-radius: var(--radius-md);
+  transition:
+    background-color var(--transition-fast),
+    color var(--transition-fast),
+    border-color var(--transition-fast),
+    box-shadow var(--transition-fast),
+    transform var(--transition-fast);
+  cursor: pointer;
+  text-decoration: none;
+  border: 2px solid transparent;
+}
+
+.btn:focus-visible {
+  outline: 2px solid var(--color-focus-ring);
+  outline-offset: 3px;
+}
+
+.btn:active {
+  transform: translateY(1px);
+}
+
+.btn--primary {
+  background-color: var(--color-accent);
+  color: #fff;
+  border-color: var(--color-accent);
+}
+
+.btn--primary:hover {
+  background-color: var(--color-accent-hover);
+  border-color: var(--color-accent-hover);
+  box-shadow: var(--shadow-md);
+}
+
+.btn--outline {
+  background-color: transparent;
+  color: var(--color-accent);
+  border-color: var(--color-accent);
+}
+
+.btn--outline:hover {
+  background-color: var(--color-accent-subtle);
+}
+
+.btn--outline-white {
+  background-color: transparent;
+  color: #fff;
+  border-color: #fff;
+}
+
+.btn--outline-white:hover {
+  background-color: rgb(255 255 255 / 0.15);
+}
+
+/* --- Scroll Reveal --- */
+[data-reveal] {
+  opacity: 0;
+  transform: translateY(2rem);
+  transition:
+    opacity var(--transition-reveal),
+    transform var(--transition-reveal);
+}
+
+[data-reveal='stagger'] > * {
+  opacity: 0;
+  transform: translateY(1.5rem);
+  transition:
+    opacity var(--transition-reveal),
+    transform var(--transition-reveal);
+}
+
+[data-reveal='stagger'] > *:nth-child(1) {
+  transition-delay: 0ms;
+}
+
+[data-reveal='stagger'] > *:nth-child(2) {
+  transition-delay: 100ms;
+}
+
+[data-reveal='stagger'] > *:nth-child(3) {
+  transition-delay: 200ms;
+}
+
+[data-reveal='stagger'] > *:nth-child(4) {
+  transition-delay: 300ms;
+}
+
+[data-reveal='stagger'] > *:nth-child(5) {
+  transition-delay: 400ms;
+}
+
+[data-reveal='stagger'] > *:nth-child(6) {
+  transition-delay: 500ms;
+}
+
+[data-reveal].is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+[data-reveal='stagger'].is-visible > * {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  [data-reveal],
+  [data-reveal='stagger'] > * {
+    transition: none;
+    opacity: 1;
+    transform: none;
+  }
+}
+
+/* --- Section dividers (angled clip-path) --- */
+.section--angled-bottom {
+  position: relative;
+}
+
+.section--angled-bottom::after {
+  content: '';
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  right: 0;
+  height: 4rem;
+  background-color: var(--color-bg);
+  clip-path: polygon(0 100%, 100% 0, 100% 100%);
+  pointer-events: none;
+}
+
+.section--angled-top {
+  position: relative;
+}
+
+.section--angled-top::before {
+  content: '';
+  position: absolute;
+  top: -1px;
+  left: 0;
+  right: 0;
+  height: 4rem;
+  background-color: var(--color-bg-surface);
+  clip-path: polygon(0 0, 100% 100%, 0 100%);
+  pointer-events: none;
+}
+
+/* --- Section base padding --- */
+.section {
+  padding-block: var(--section-padding);
+}
+
+/* --- Flow spacing --- */
+.flow > * + * {
+  margin-top: var(--space-4);
+}

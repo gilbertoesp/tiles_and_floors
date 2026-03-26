@@ -1,0 +1,153 @@
+/* ============================================================
+   Design Tokens — Mario Acosta Tile & Stone
+   All values defined here; never hardcode in component CSS.
+   ============================================================ */
+
+:root {
+  /* --- Brand Palette --- */
+  --color-clay-50: #fdf6f0;
+  --color-clay-100: #f5e6d8;
+  --color-clay-200: #e8c9ae;
+  --color-clay-300: #d4a47a;
+  --color-clay-400: #bf7f47;
+  --color-clay-500: #a8622e;
+  --color-clay-600: #8c4e22;
+
+  --color-slate-50: #f4f5f6;
+  --color-slate-100: #e2e5e8;
+  --color-slate-200: #c4cad0;
+  --color-slate-300: #8d9aa6;
+  --color-slate-400: #5a6b7a;
+  --color-slate-500: #3a4d5c;
+  --color-slate-600: #253340;
+
+  --color-stone-50: #f7f5f3;
+  --color-stone-100: #ece9e5;
+  --color-stone-200: #d4cfc8;
+  --color-stone-300: #b5ada3;
+  --color-stone-400: #8e847a;
+  --color-stone-500: #645d56;
+  --color-stone-600: #3d3830;
+
+  --color-cream: #faf8f5;
+  --color-ink: #1e1a17;
+
+  /* --- Semantic aliases — light theme --- */
+  --color-bg: var(--color-cream);
+  --color-bg-surface: var(--color-stone-50);
+  --color-bg-elevated: #ffffff;
+  --color-bg-dark: var(--color-slate-600);
+  --color-text-primary: var(--color-ink);
+  --color-text-secondary: var(--color-stone-500);
+  --color-text-muted: var(--color-stone-400);
+  --color-text-on-dark: var(--color-stone-50);
+  --color-accent: var(--color-clay-400);
+  --color-accent-hover: var(--color-clay-500);
+  --color-accent-subtle: var(--color-clay-100);
+  --color-border: var(--color-stone-200);
+  --color-border-strong: var(--color-stone-300);
+  --color-focus-ring: var(--color-slate-400);
+
+  /* --- Spacing scale (base 4px) --- */
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-6: 1.5rem;
+  --space-8: 2rem;
+  --space-12: 3rem;
+  --space-16: 4rem;
+  --space-20: 5rem;
+  --space-24: 6rem;
+  --space-32: 8rem;
+
+  /* --- Typography --- */
+  --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
+  --font-serif: 'Playfair Display', Georgia, serif;
+
+  --text-xs: 0.75rem;
+  --text-sm: 0.875rem;
+  --text-base: 1rem;
+  --text-lg: 1.125rem;
+  --text-xl: 1.25rem;
+  --text-2xl: 1.5rem;
+  --text-3xl: 1.875rem;
+  --text-4xl: 2.25rem;
+  --text-5xl: 3rem;
+  --text-6xl: 3.75rem;
+  --text-7xl: 4.5rem;
+
+  --leading-tight: 1.2;
+  --leading-snug: 1.375;
+  --leading-normal: 1.6;
+  --leading-relaxed: 1.75;
+
+  --weight-normal: 400;
+  --weight-medium: 500;
+  --weight-semibold: 600;
+  --weight-bold: 700;
+
+  /* --- Border radius --- */
+  --radius-sm: 0.25rem;
+  --radius-md: 0.5rem;
+  --radius-lg: 1rem;
+  --radius-xl: 1.5rem;
+  --radius-full: 9999px;
+
+  /* --- Shadows --- */
+  --shadow-sm: 0 1px 3px 0 rgb(0 0 0 / 0.08);
+  --shadow-md: 0 4px 12px 0 rgb(0 0 0 / 0.12);
+  --shadow-lg: 0 8px 32px 0 rgb(0 0 0 / 0.16);
+  --shadow-xl: 0 16px 48px 0 rgb(0 0 0 / 0.2);
+
+  /* --- Transitions --- */
+  --transition-fast: 150ms ease;
+  --transition-base: 250ms ease;
+  --transition-slow: 400ms ease;
+  --transition-reveal: 600ms cubic-bezier(0.16, 1, 0.3, 1);
+
+  /* --- Z-index scale --- */
+  --z-base: 0;
+  --z-above: 10;
+  --z-nav: 100;
+  --z-modal: 200;
+
+  /* --- Layout --- */
+  --container-max: 1280px;
+  --container-padding: var(--space-4);
+  --hero-min-height: 85svh;
+  --section-padding: var(--space-20);
+}
+
+/* --- Dark theme overrides --- */
+[data-theme='dark'] {
+  --color-bg: var(--color-stone-600);
+  --color-bg-surface: var(--color-slate-600);
+  --color-bg-elevated: var(--color-slate-500);
+  --color-text-primary: var(--color-stone-50);
+  --color-text-secondary: var(--color-stone-200);
+  --color-text-muted: var(--color-stone-300);
+  --color-accent: var(--color-clay-300);
+  --color-accent-hover: var(--color-clay-200);
+  --color-accent-subtle: var(--color-clay-600);
+  --color-border: var(--color-slate-400);
+  --color-border-strong: var(--color-slate-300);
+  --color-focus-ring: var(--color-clay-300);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme='light']) {
+    --color-bg: var(--color-stone-600);
+    --color-bg-surface: var(--color-slate-600);
+    --color-bg-elevated: var(--color-slate-500);
+    --color-text-primary: var(--color-stone-50);
+    --color-text-secondary: var(--color-stone-200);
+    --color-text-muted: var(--color-stone-300);
+    --color-accent: var(--color-clay-300);
+    --color-accent-hover: var(--color-clay-200);
+    --color-accent-subtle: var(--color-clay-600);
+    --color-border: var(--color-slate-400);
+    --color-border-strong: var(--color-slate-300);
+    --color-focus-ring: var(--color-clay-300);
+  }
+}
