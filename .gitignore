@@ -2,3 +2,6 @@ node_modules/
 dist/
 *.js.map
 .DS_Store
+
+# Dev-compiled JS (esbuild watch output)
+src/pages/**/*.js

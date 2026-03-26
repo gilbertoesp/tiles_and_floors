@@ -4,7 +4,9 @@
   "description": "Portfolio website for Mario Acosta — Tile & Stone Contractor",
   "private": true,
   "scripts": {
-    "dev": "browser-sync start --server src --files 'src/**/*' --no-notify --port 3000",
+    "dev:ts": "esbuild src/pages/home/home.ts src/pages/gallery/gallery.ts src/pages/about/about.ts --bundle --outdir=src --outbase=src --format=esm --target=es2020 --sourcemap --watch=forever",
+    "dev:serve": "browser-sync start --server src --serveStatic public --files 'src/**/*' --no-notify --port 3000",
+    "dev": "npm run dev:ts & npm run dev:serve",
     "build": "npm run typecheck && npm run build:ts && npm run build:css && npm run copy:assets",
     "build:ts": "esbuild src/pages/home/home.ts src/pages/gallery/gallery.ts src/pages/about/about.ts --bundle --outdir=dist --format=esm --target=es2020 --minify --sourcemap",
     "build:css": "node scripts/build-css.js",

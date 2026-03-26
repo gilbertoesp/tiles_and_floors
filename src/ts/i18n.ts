@@ -13,7 +13,7 @@ const resolveKey = (map: TranslationMap, key: string): string => {
   let node: string | TranslationMap = map;
   for (const part of parts) {
     if (typeof node !== 'object' || !(part in node)) return key;
-    const next = node[part];
+    const next = node[part] as string | TranslationMap;
     if (next === undefined) return key;
     node = next;
   }
